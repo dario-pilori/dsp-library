@@ -1,0 +1,14 @@
+# Avoid text files and backup
+*.log
+*.asv
+*.sh
+*.m~
+*.mex*
+*.DAT
+slprj/
+# Files that are P-coded
+agc.m
+dcblock.m
+deskew.m
+resamp.m
+levcamp.m
