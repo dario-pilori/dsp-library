@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/140095242.svg)](https://zenodo.org/badge/latestdoi/140095242)
+[![DOI](https://zenodo.org/badge/188026700.svg)](https://zenodo.org/badge/latestdoi/188026700)
 
 # DSP library
 This project contains several different functions to apply DSP algorithms
