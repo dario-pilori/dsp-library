@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/140095242.svg)](https://zenodo.org/badge/latestdoi/140095242)
+
 # DSP library
 This project contains several different functions to apply DSP algorithms
 for optical communications. These functions are suitable both for coherent and
