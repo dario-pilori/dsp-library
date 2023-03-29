@@ -225,7 +225,7 @@ for nn = iniz:fin
     if rem(nn,2)==0
         i_a = mod(nn/2-1,size(a,1))+1;
         if M>1
-            circshift(ph,[1,0]);
+            ph = circshift(ph,[1,0]);
             ph(1,:) = exp(-1j*(atan2(imag(y(nn,:)),real(y(nn,:)))-atan2(imag(a(i_a,:)),real(a(i_a,:)))));
         end
         e(nn,:) = y(nn,:) - a(i_a,:).*conj(sign(sum(ph,1)));
@@ -250,7 +250,7 @@ for nn = iniz:fin
     if rem(nn,2)==0
         i_a = mod(nn/2-1,size(a,1))+1;                                     % index of training symbol
         if M>1                                                             % if phase recovery
-            circshift(ph,[1,0]);                                           % shift phase moving average
+            ph = circshift(ph,[1,0]);                                           % shift phase moving average
             ph(1,:) = exp(-1j*(atan2(y(nn,2:2:end),y(nn,1:2:end))-atan2(imag(a(i_a,:)),real(a(i_a,:)))));% calculate phase error
         end
         e(nn,:) = y(nn,:) - complex_to_real(a(i_a,:).*conj(sign(sum(ph,1))));% calculate equalizer error
